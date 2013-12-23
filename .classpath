@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="lib" path="D:/SDN/RestServer/restlet-jse-2.1.6/lib/org.restlet.jar" sourcepath="org.restlet/org"/>
+	<classpathentry kind="lib" path="D:/SDN/RestServer/restlet-jse-2.1.6/lib/org.json_2.0/org.json.jar"/>
+	<classpathentry kind="lib" path="D:/SDN/RestServer/restlet-jse-2.1.6/lib/org.restlet.ext.json.jar"/>
+	<classpathentry kind="lib" path="D:/SDN/RestServer/httpcomponents-client-4.3.1-bin/lib/httpclient-4.3.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
