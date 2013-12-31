@@ -16,7 +16,8 @@ public class Configuration {
 	{
 		if (site_name_ip==null){
 			site_name_ip = new HashMap<String,String>();
-			site_name_ip.put("site1", "127.0.0.1");
+			site_name_ip.put("Tsinghua", "166.111.65.199");
+			site_name_ip.put("Hitachi", "0.0.0.0");
 		}
 		if ((mannual_site_flow==null) || (mannual_site_ip==null)){
 			mannual_site_flow = new ArrayList<String>();

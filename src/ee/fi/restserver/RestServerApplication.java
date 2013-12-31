@@ -9,6 +9,7 @@ import ee.fi.restserver.applications.InitServerResource;
 import ee.fi.restserver.applications.InsertFlowServerResource;
 import ee.fi.restserver.applications.QueryFlowTableServerResource;
 import ee.fi.restserver.applications.QueryLinkServerResource;
+import ee.fi.restserver.applications.QuerySitesServerResource;
 import ee.fi.restserver.applications.QuerySwitchServerResource;
 
 /**
@@ -34,6 +35,8 @@ public class RestServerApplication extends Application {
 		router.attach("/topology/links/query/json",QueryLinkServerResource.class);
 		// query all switches information
 		router.attach("/topology/switches/query/json",QuerySwitchServerResource.class);
+		// query all sitename
+		router.attach("/sites",QuerySitesServerResource.class);
 		return router;
 	}
 	
