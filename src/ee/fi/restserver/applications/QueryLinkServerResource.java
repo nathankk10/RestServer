@@ -1,5 +1,7 @@
 package ee.fi.restserver.applications;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.restlet.data.MediaType;
 import org.restlet.representation.Representation;
 import org.restlet.representation.StringRepresentation;
@@ -34,10 +36,14 @@ public class QueryLinkServerResource extends ServerResource {
 			Representation response = clientResource.get();
 			String response_string = response.getText();
 			
+			JSONArray array = new JSONArray(response_string);
+			JSONObject result_json = new JSONObject();
+			result_json.put("topology", array);
+			
 			if (Configuration.D)
 				System.out.println("Floodlight response:\t" + response_string);
 			
-			result = new StringRepresentation(response_string,MediaType.TEXT_PLAIN);
+			result = new StringRepresentation(result_json.toString(),MediaType.TEXT_PLAIN);
 			
 		} catch (Exception e){
 			e.printStackTrace();
